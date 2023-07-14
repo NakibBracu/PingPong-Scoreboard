@@ -1,14 +1,16 @@
 const p1 = {
     score: 0,
     button:document.querySelector('#player1'),
-    display:document.querySelector('#p1Display')
+    display:document.querySelector('#p1Display'),
+    name:"Player 1"
 }
 
   
 const p2 = {
     score: 0,
     button:document.querySelector('#player2'),
-    display:document.querySelector('#p2Display')
+    display:document.querySelector('#p2Display'),
+    name:"Player 2"
 }
 let isGameOver = false;
 let winningScore = 3;//lowest option in winningscore selector
@@ -59,6 +61,7 @@ function Restart(){
 } 
 
 function displayWinner(winner) {
+    console.log(winner)
     let winnerText = "Winner: " + winner.name;
     let winnerContainer = document.getElementById("winnerContainer");
     winnerContainer.textContent = winnerText;
