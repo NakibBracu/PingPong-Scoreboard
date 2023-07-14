@@ -16,7 +16,6 @@ let isGameOver = false;
 let winningScore = 3;//lowest option in winningscore selector
 let resetButton = document.querySelector('#reset')
 let winningScoreDropDown = document.querySelector('#winningScore')
-let winner = "Player 1";
 
 function updateScores(player, opponent) {
     if (!isGameOver) {
